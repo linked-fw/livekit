@@ -35,7 +35,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "test": "npm run build && node --test test/*.test.mjs"
+    "test": "npm run build && node --test test/*.test.mjs",
+    "test:e2e": "npm run build && node test/integration.mjs"
   },
   "dependencies": {
     "@_linked/live-sessions": "^0.1.0",
@@ -45,7 +46,9 @@
     "livekit-server-sdk": "2.19.1"
   },
   "devDependencies": {
-    "typescript": "5.9.2"
+    "typescript": "5.9.2",
+    "esbuild": "0.28.2",
+    "playwright": "1.61.0"
   },
   "publishConfig": {
     "access": "public"
