@@ -39,7 +39,7 @@
     "test:e2e": "npm run build && node test/integration.mjs"
   },
   "dependencies": {
-    "@_linked/live-sessions": "^0.1.0",
+    "@_linked/live-sessions": "git+https://github.com/linked-fw/live-sessions.git#c3be45a1e175c396e7ce0f4ae9eee167fc4ea78c",
     "@_linked/core": "^2.22.2",
     "@livekit/protocol": "1.51.0",
     "livekit-client": "2.22.3",
