@@ -36,7 +36,8 @@
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "npm run build && node --test test/*.test.mjs",
-    "test:e2e": "npm run build && node test/integration.mjs"
+    "test:e2e": "npm run build && node test/integration.mjs",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "@_linked/live-sessions": "git+https://github.com/linked-fw/live-sessions.git#c3be45a1e175c396e7ce0f4ae9eee167fc4ea78c",
